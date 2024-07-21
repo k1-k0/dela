@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dela"
+version = "0.1.0"
+description = ""
+authors = ["k1-k0 <kmssrvk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.31"
+alembic = "^1.13.2"
+pydantic = "^2.8.2"
+psycopg = "^3.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.4"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
