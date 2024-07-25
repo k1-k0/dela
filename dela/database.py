@@ -35,7 +35,7 @@ class Task(Base):
     end_date: Mapped[datetime | None]
     duration: Mapped[timedelta | None]
 
-    user_id: Mapped[int] = mapped_column(ForeignKey("user.id"))
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"))
     user: Mapped["User"] = relationship(back_populates="tasks")
 
     def __repr__(self) -> str:
